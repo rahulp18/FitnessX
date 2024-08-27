@@ -1,0 +1,25 @@
+{
+  "name": "fitness",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev:phone": "cd apps/phone && npx expo start -c",
+    "dev:server": "cd apps/server && yarn start:dev",
+    "dev": "concurrently \"yarn dev:phone\" \"yarn dev:server\"",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.14",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "yarn@1.22.22",
+  "workspaces": [
+    "apps/*"
+  ]
+}
