@@ -1,16 +1,15 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "Fitnessx",
+    "slug": "fitnessx",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#92A3FD"
     },
     "ios": {
       "supportsTablet": true
@@ -19,7 +18,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.rahulp18.mobile"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +31,16 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e4d0c80b-78ce-46ba-9828-f2e60e48cf43"
+      }
+    },
+    "owner": "rahulprojects",
+    "scheme": "mycoolredirect"
   }
 }

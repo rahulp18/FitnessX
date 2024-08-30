@@ -3,11 +3,13 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev:phone": "cd apps/phone && npx expo start -c",
-    "dev:server": "cd apps/server && yarn start:dev",
-    "dev": "concurrently \"yarn dev:phone\" \"yarn dev:server\"",
+    "dev:m": "cd apps/mobile && npx expo start -c",
+    "dev:s": "cd apps/server && yarn start:dev",
+    "dev": "concurrently \"yarn dev:m\" \"yarn dev:s\"",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
@@ -21,5 +23,11 @@
   "packageManager": "yarn@1.22.22",
   "workspaces": [
     "apps/*"
-  ]
+  ],
+  "version": "1.0.0",
+  "dependencies": {
+    "expo": "~51.0.28",
+    "react": "18.2.0",
+    "react-native": "0.74.5"
+  }
 }
